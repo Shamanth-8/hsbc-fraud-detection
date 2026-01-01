@@ -70,14 +70,5 @@ fraud_metadata.pkl
 
 - If you push to GitHub over SSH, ensure your SSH key is added to your GitHub account. If you prefer HTTPS, set the remote to the HTTPS URL and use a Personal Access Token (PAT) when prompted.
 
-## Troubleshooting
 
-- `git push` failing with `Permission denied (publickey)`: generate an SSH key with `ssh-keygen -t ed25519 -C "your_email@example.com"` and add the contents of `~/.ssh/id_ed25519.pub` to GitHub → Settings → SSH and GPG keys.
-- If your remote already has a README or other commits and you get rejected on push, run:
-
-```bash
-git pull --rebase origin main
-# resolve conflicts if any
-git push -u origin main
-```
 
